@@ -1,0 +1,52 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+.flexi-img {
+  height: 100%;
+  width: 100%;
+}
+.sec-padding {
+  padding: 2rem 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.btn-round {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ececec;
+}
+
+.btn-pri {
+  padding: 0.5rem 1rem;
+  background-color: #272727;
+  color: white;
+  border-radius: 7px;
+}
+.btn-sec {
+  padding: 0.5rem 1rem;
+  background-color: goldenrod;
+  color: white;
+  border-radius: 7px;
+}
+
+.disable {
+  display: none;
+}
+
+.active-btn {
+  background-color: #272727;
+  color: #ffffff;
+}

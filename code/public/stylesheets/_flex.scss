@@ -1,0 +1,30 @@
+.flex {
+  display: flex;
+}
+.fw {
+  flex-wrap: wrap;
+}
+.jcc {
+  justify-content: center;
+}
+.jsb {
+  justify-content: space-between;
+}
+.aic {
+  align-items: center;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+.flex-25 {
+  flex: 0 1 22%;
+  margin: 1%;
+}
+.flex-80 {
+  flex: 0 1 70%;
+}
