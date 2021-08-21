@@ -422,10 +422,6 @@ body {
   font-weight: 800;
 }
 
-.cartCard-total a {
-  margin: 0 auto;
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -435,6 +431,11 @@ a {
   text-decoration: none;
   color: black;
   display: inline-block;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 .flexi-img {
