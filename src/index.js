@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { products } from './data.json';
 
 import Shopping from './components/Shopping';
 
