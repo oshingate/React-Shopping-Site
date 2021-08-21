@@ -1,7 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
-import _ from 'lodash';
 
 class Aside extends React.Component {
   constructor(props) {
@@ -16,25 +13,24 @@ class Aside extends React.Component {
           {this.props.data.arrOfSize.map((ele, i) => {
             return (
               <li key={i}>
-                <a
+                <button
                   onClick={(event) => this.props.handleSortBySize(event, ele)}
                   className={
                     this.props.data.activeSize === ele
                       ? 'active-btn btn-round '
                       : 'btn-round '
                   }
-                  href='#'
                 >
                   {ele}
-                </a>
+                </button>
               </li>
             );
           })}
         </ul>
 
-        <a href='#' className='btn-pri' onClick={this.props.handleResetSort}>
+        <button className='btn-pri' onClick={this.props.handleResetSort}>
           Reset
-        </a>
+        </button>
       </aside>
     );
   }

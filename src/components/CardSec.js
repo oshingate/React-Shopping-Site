@@ -1,7 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
-import _ from 'lodash';
+
 import Card from './Card';
 
 class CardSec extends React.Component {

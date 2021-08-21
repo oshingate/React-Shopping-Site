@@ -1,7 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
-import _ from 'lodash';
 
 class Header extends React.Component {
   constructor(props) {
@@ -12,7 +9,7 @@ class Header extends React.Component {
     return (
       <header className='header flex jsb'>
         <strong>Shopping-site</strong>
-        <a href='#' className='cart-logo' onClick={this.props.handleCartClose}>
+        <button className='cart-logo' onClick={this.props.handleCartClose}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='16'
@@ -29,7 +26,7 @@ class Header extends React.Component {
           ) : (
             <span>{this.props.data.cart.items.length}</span>
           )}
-        </a>
+        </button>
       </header>
     );
   }

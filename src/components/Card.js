@@ -1,7 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
-import _ from 'lodash';
 
 class Card extends React.Component {
   constructor(props) {
@@ -24,15 +21,14 @@ class Card extends React.Component {
         <div className='card__line'></div>
         <h4>{this.props.ele.currencyFormat + ' ' + this.props.ele.price}</h4>
         <div className='flex center'>
-          <a
-            href='#'
+          <button
             className='btn-pri'
             onClick={(event) => {
               this.props.handleAddToCart(event, this.props.ele);
             }}
           >
             Add to cart
-          </a>
+          </button>
         </div>
       </article>
     );

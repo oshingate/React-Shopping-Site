@@ -1,7 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
-import _ from 'lodash';
 
 class Hero extends React.Component {
   constructor(props) {

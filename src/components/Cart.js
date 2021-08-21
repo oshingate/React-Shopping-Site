@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { products } from '../data.json';
+
 import _ from 'lodash';
 import CartCard from './CartCard';
 
@@ -16,18 +15,18 @@ class Cart extends React.Component {
       >
         <div className='cart-header flex jsb'>
           <div>
-            <a href='#' className='cart-logo cart-logo-cart'>
+            <button className='cart-logo cart-logo-cart'>
               <i className='fas fa-shopping-cart'></i>
               {this.props.data.cart.items.length === 0 ? (
                 ''
               ) : (
                 <span>{this.props.data.cart.items.length}</span>
               )}
-            </a>
+            </button>
           </div>
-          <a href='#' className='close' onClick={this.props.handleCartClose}>
+          <button className='close' onClick={this.props.handleCartClose}>
             X
-          </a>
+          </button>
         </div>
 
         <div className='div-padding cart-main'>
@@ -48,9 +47,7 @@ class Cart extends React.Component {
           <div className='cartCard-total'>
             <h3>Total Amount:- {this.props.data.cart.total}</h3>
             <div className='flex center'>
-              <a href='#' className='btn-sec'>
-                Checkout
-              </a>
+              <button className='btn-sec'>Checkout</button>
             </div>
           </div>
         </div>
